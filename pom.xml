@@ -12,7 +12,7 @@
     <artifactId>some</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>some</name>
-    <description>A simple social network</description>
+    <description>Simple some project</description>
     <url/>
     <licenses>
         <license/>
@@ -38,6 +38,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -58,11 +59,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- Spring Security -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-            <version>3.4.1</version>
         </dependency>
+        <!-- JavaMail API -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
@@ -72,6 +74,7 @@
             <artifactId>jakarta.mail-api</artifactId>
             <version>2.1.2</version>
         </dependency>
+        <!-- JWT asjad -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-api</artifactId>
@@ -89,61 +92,45 @@
             <version>0.12.6</version>
             <scope>runtime</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
         <dependency>
             <groupId>org.modelmapper</groupId>
             <artifactId>modelmapper</artifactId>
             <version>3.2.2</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui -->
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-            <version>2.6.0</version>
+            <version>2.7.0</version>
         </dependency>
+
+        <!-- Spring Security Configuration -->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-config</artifactId>
         </dependency>
+
+        <!-- Spring Boot Configuration Processor -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/me.paulschwarz/spring-dotenv -->
         <dependency>
             <groupId>me.paulschwarz</groupId>
             <artifactId>spring-dotenv</artifactId>
             <version>4.0.0</version>
         </dependency>
+
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-text</artifactId>
-            <version>1.13.0</version>
+            <version>1.12.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-database-postgresql</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.session</groupId>
-            <artifactId>spring-session-core</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-docker-compose</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-
 
     </dependencies>
 
@@ -157,12 +144,7 @@
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <version>${lombok.version}</version>
                         </path>
-<!--                        <path>-->
-<!--                            <groupId>org.springframework.boot</groupId>-->
-<!--                            <artifactId>spring-boot-configuration-processor</artifactId>-->
-<!--                        </path>-->
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
@@ -184,18 +166,8 @@
 </project>
 
 
-<!--
-After making changes here, if needed delete target folder, run "mvn clean install".
-Intellij File -> Invalidate Caches -> Invalidate and Restart, After restart, right-click on pom.xml -> Maven -> Reload project
-Eclipse: Project -> Clean...; Right-click on project -> Maven -> Update Project
-
-mvn clean install
-mvn clean compile
-
-Right-click your pom.xml -> Maven -> Reload project.
-File -> Invalidate Caches -> Invalidate and Restart.
-After restart, re-check the “Enable annotation processing” setting is still on.
-
-Open File -> Settings -> Build, Execution, Deployment -> Compiler -> Annotation Processors.
-Ensure “Enable annotation processing” is checked.
--->
+        <!--
+        After making changes here, if needed delete target folder, run "mvn clean install".
+        Intellij File -> Invalidate Caches -> Invalidate and Restart, After restart, right-click on pom.xml -> Maven -> Reload project
+        Eclipse: Project -> Clean...; Right-click on project -> Maven -> Update Project
+        -->

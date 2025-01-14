@@ -13,8 +13,8 @@ public class OpenApiConfig {
     public OpenAPI openAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Library API")
-                        .description("API documentation for Library Application")
+                        .title("Simple some API")
+                        .description("API documentation for simple social network")
                         .version("v1.0")
                         .contact(new Contact()
                                 .name("Ivose")
